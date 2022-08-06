@@ -113,6 +113,11 @@ textarea{
   background: transparent;
 }
 
+.past {
+  background-color: grey;
+}
 
-
+.present {
+  background-color: red;
+}
 

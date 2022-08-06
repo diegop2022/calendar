@@ -3,7 +3,7 @@ var timeDisplayEl = document.querySelector("#time-display")
 timeDisplayEl.textContent = moment().format("MMM Do YY");
 
 var time = moment().format('LT');
-
+var hour = time
 
 // Input 1
 var userInput1 = document.getElementById('task-text1');
@@ -178,20 +178,30 @@ function saveLocal9() {
 // End Input 9
 
 
-//add class to id="card1" time is 9am or after
 
+// if (hour > 9) {
+//     userInput1.addClass('past');
+// } else if (hour === 9) {
+//     userInput1.addClass('present');
+// }
 
-const times = ["9:00", "10:00", "11:00", "12:00", "1:00", "2:00", "3:00", "4:00", "5:00"]
-times.forEach(function(timeCompare){
-    
-})  
 
 console.log(time)
 
-function compare() {
-    if (time > 9) {
-        userInput1.style.backgroundColor = green; 
+console.log(time)
+
+function check() {
+    var now = moment();
+    var hourToCheck = (now.day() !== 0)?21:00;
+    var dateToCheck = now.hour(hourToCheck);
+    
+    if (hourToCheck > 9) {
+        userInput1.addClass('past');
     }
+
+    console.log(hourToCheck)
+    return moment().isAfter(dateToCheck);
 }
 
-compare()
+console.log(check())
+check()
