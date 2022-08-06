@@ -178,4 +178,20 @@ function saveLocal9() {
 // End Input 9
 
 
+//add class to id="card1" time is 9am or after
 
+
+const times = ["9:00", "10:00", "11:00", "12:00", "1:00", "2:00", "3:00", "4:00", "5:00"]
+times.forEach(function(timeCompare){
+    
+})  
+
+console.log(time)
+
+function compare() {
+    if (time > 9) {
+        userInput1.style.backgroundColor = green; 
+    }
+}
+
+compare()
