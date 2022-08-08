@@ -298,7 +298,7 @@ function saveLocal9() {
 // check5()
 
 
-var futureTime = moment().set('hour', 10);
+var futureTime = moment().set('hour', 11);
 
 console.log(futureTime)
 
@@ -310,13 +310,12 @@ if (futureTime > hour) {
     userInput1.addClass('future');
 }
 
-if (futureTime < hour) {
+else if (futureTime < hour) {
     var userInput1 = $('#card1');
     userInput1.addClass('past');
 }
 
-
-if (futureTime = hour) {
+else {
     var userInput1 = $('#card1');
     userInput1.addClass('present');
 }
@@ -327,5 +326,5 @@ if (futureTime = hour) {
 time1()
 
 
-
+console.log(hour)
 
