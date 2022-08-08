@@ -3,7 +3,7 @@ var timeDisplayEl = document.querySelector("#time-display")
 timeDisplayEl.textContent = moment().format("MMM Do YY");
 
 var time = moment().format('LT');
-var hour = time
+var hour = moment()
 
 // Input 1
 var userInput1 = document.getElementById('task-text1');
@@ -177,31 +177,155 @@ function saveLocal9() {
 }
 // End Input 9
 
-
-
-// if (hour > 9) {
-//     userInput1.addClass('past');
-// } else if (hour === 9) {
-//     userInput1.addClass('present');
+// function check1() {
+//     var now = moment();
+//     var hourToCheck = (now.day() !== 0)?9:00;
+//     var dateToCheck = now.hour(hourToCheck);
+    
+//     if (check1) {
+//         var userInput1 = $('#task-text1');
+//         userInput1.addClass('past');
+//     } if (check1 === 9 ) {
+//         var userInput1 = $('#task-text1');
+//         userInput1.addClass('present');
+//     } else if (check1 < 9) {
+//         var userInput1 = $('#task-text1');
+//         userInput1.addClass('future');
+//     }
+    
+//     console.log(hour)
+//     console.log(hourToCheck)
+//     return moment().isAfter(dateToCheck);
 // }
 
+// console.log(check1())
+// check1()
 
-console.log(time)
-
-console.log(time)
-
-function check() {
-    var now = moment();
-    var hourToCheck = (now.day() !== 0)?21:00;
-    var dateToCheck = now.hour(hourToCheck);
+// function check2() {
+//     var now = moment();
+//     var hourToCheck = (now.day() !== 0)?10:00;
+//     var dateToCheck = now.hour(hourToCheck);
     
-    if (hourToCheck > 9) {
-        userInput1.addClass('past');
-    }
+//     if (check2) {
+//         var userInput2 = $('#task-text2');
+//         userInput2.addClass('past');
+//     } if (check2 === 10 ) {
+//         var userInput2 = $('#task-text2');
+//         userInput2.addClass('present');
+//     } else if (check2 < 10) {
+//         var userInput2 = $('#task-text2');
+//         userInput2.addClass('future');
+//     }
 
-    console.log(hourToCheck)
-    return moment().isAfter(dateToCheck);
+//     console.log(hour)
+//     console.log(hourToCheck)
+//     return moment().isAfter(dateToCheck);
+// }
+
+// console.log(check2())
+// check2()
+
+// function check3() {
+//     var now = moment();
+//     var hourToCheck = (now.day() !== 0)?11:00;
+//     var dateToCheck = now.hour(hourToCheck);
+    
+//     if (check3) {
+//         var userInput3 = $('#task-text3');
+//         userInput3.addClass('past');
+//     } if (check3 === 11 ) {
+//         var userInput3 = $('#task-text3');
+//         userInput3.addClass('present');
+//     } else if (check3 < 11) {
+//         var userInput3 = $('#task-text3');
+//         userInput3.addClass('future');
+//     }
+    
+//     console.log(hour)
+//     console.log(hourToCheck)
+//     return moment().isAfter(dateToCheck);
+// }
+
+// console.log(check3())
+// check3()
+
+// function check4() {
+//     var now = moment();
+//     var hourToCheck = (now.day() !== 0)?12:00;
+//     var dateToCheck = now.hour(hourToCheck);
+    
+//     if (check4) {
+//         var userInput4 = $('#task-text4');
+//         userInput4.addClass('past');
+//     } if (check4 === 12 ) {
+//         var userInput4 = $('#task-text4');
+//         userInput4.addClass('present');
+//     } else if (check4 < 12) {
+//         var userInput4 = $('#task-text4');
+//         userInput4.addClass('future');
+//     }
+    
+//     console.log(hour)
+//     console.log(hourToCheck)
+//     return moment().isAfter(dateToCheck);
+// }
+
+// console.log(check4())
+// check4()
+
+// function check5() {
+//     var now = moment();
+//     var hourToCheck = (now.day() !== 0)?13:00;
+//     var dateToCheck = now.hour(hourToCheck);
+    
+//     if (check5) {
+//         var userInput5 = $('#task-text5');
+//         userInput5.addClass('past');
+//     } if (check5 === 13 ) {
+//         var userInput5 = $('#task-text5');
+//         userInput5.addClass('present');
+//     } else if (check5 < 13) {
+//         var userInput5 = $('#task-text5');
+//         userInput5.addClass('future');
+//     }
+    
+//     console.log(hour)
+//     console.log(hourToCheck)
+//     return moment().isAfter(dateToCheck);
+// }
+
+// console.log(check5())
+// check5()
+
+
+var futureTime = moment().set('hour', 10);
+
+console.log(futureTime)
+
+
+function time1() {
+
+if (futureTime > hour) {
+    var userInput1 = $('#card1');
+    userInput1.addClass('future');
 }
 
-console.log(check())
-check()
+if (futureTime < hour) {
+    var userInput1 = $('#card1');
+    userInput1.addClass('past');
+}
+
+
+if (futureTime = hour) {
+    var userInput1 = $('#card1');
+    userInput1.addClass('present');
+}
+
+}
+
+
+time1()
+
+
+
+
