@@ -3,7 +3,6 @@ var timeDisplayEl = document.querySelector("#time-display")
 timeDisplayEl.textContent = moment().format("MMM Do YY");
 
 var time = moment().format('LT');
-var hour = moment()
 
 // Input 1
 var userInput1 = document.getElementById('task-text1');
@@ -298,19 +297,18 @@ function saveLocal9() {
 // check5()
 
 
-var futureTime = moment().set('hour', 11);
 
-console.log(futureTime)
-
+var hour = moment().hour();
+var futureTime1 = 9
 
 function time1() {
 
-if (futureTime > hour) {
+if (futureTime1 > hour) {
     var userInput1 = $('#card1');
     userInput1.addClass('future');
 }
 
-else if (futureTime < hour) {
+else if (futureTime1 < hour) {
     var userInput1 = $('#card1');
     userInput1.addClass('past');
 }
@@ -322,9 +320,183 @@ else {
 
 }
 
-
 time1()
 
 
-console.log(hour)
+var futureTime2 = 10
 
+function time2() {
+
+if (futureTime2 > hour) {
+    var userInput2 = $('#card2');
+    userInput2.addClass('future');
+}
+
+else if (futureTime2 < hour) {
+    var userInput2 = $('#card2');
+    userInput2.addClass('past');
+}
+
+else if (futureTime2 == hour) {
+    var userInput2 = $('#card2');
+    userInput2.addClass('present');
+}
+
+}
+
+time2()
+
+
+var futureTime3 = 11
+function time3() {
+
+if (futureTime3 > hour) {
+    var userInput3 = $('#card3');
+    userInput3.addClass('future');
+}
+
+else if (futureTime3 < hour) {
+    var userInput3 = $('#card3');
+    userInput3.addClass('past');
+}
+
+else if (futureTime3 == hour) {
+    var userInput3 = $('#card3');
+    userInput3.addClass('present');
+}
+
+}
+
+time3()
+
+var futureTime4 = 12
+function time4() {
+
+if (futureTime4 > hour) {
+    var userInput4 = $('#card4');
+    userInput4.addClass('future');
+}
+
+else if (futureTime4 < hour) {
+    var userInput4 = $('#card4');
+    userInput4.addClass('past');
+}
+
+else if (futureTime4 == hour) {
+    var userInput4 = $('#card4');
+    userInput4.addClass('present');
+}
+
+}
+
+time4()
+
+var futureTime5 = 13
+function time5() {
+
+    if (futureTime5 > hour) {
+        var userInput5 = $('#card5');
+        userInput5.addClass('future');
+    }
+    
+    else if (futureTime5 < hour) {
+        var userInput5 = $('#card5');
+        userInput5.addClass('past');
+    }
+    
+    else if (futureTime5 == hour) {
+        var userInput5 = $('#card5');
+        userInput5.addClass('present');
+    }
+    
+    }
+    
+    time5()
+
+var futureTime6 = 14
+function time6() {
+
+    if (futureTime6 > hour) {
+        var userInput6 = $('#card6');
+        userInput6.addClass('future');
+    }
+    
+    else if (futureTime6 < hour) {
+        var userInput6 = $('#card6');
+        userInput6.addClass('past');
+    }
+    
+    else if (futureTime6 == hour) {
+        var userInput6 = $('#card6');
+        userInput6.addClass('present');
+    }
+    
+    }
+    
+    time6()
+
+var futureTime7 = 15
+function time7() {
+
+    if (futureTime7 > hour) {
+        var userInput7 = $('#card7');
+        userInput7.addClass('future');
+    }
+        
+    else if (futureTime7 < hour) {
+        var userInput7 = $('#card7');
+        userInput7.addClass('past');
+    }
+        
+    else if (futureTime7 == hour) {
+        var userInput7 = $('#card7');
+        userInput7.addClass('present');
+    }
+        
+    }
+        
+    time7()
+
+var futureTime8 = 16
+function time8() {
+    
+    if (futureTime8 > hour) {
+        var userInput8 = $('#card8');
+        userInput8.addClass('future');
+    }
+            
+    else if (futureTime8 < hour) {
+        var userInput8 = $('#card8');
+        userInput8.addClass('past');
+    }
+            
+    else if (futureTime8 == hour) {
+        var userInput8 = $('#card8');
+        userInput8.addClass('present');
+    }
+            
+    }
+            
+    time8()
+
+var futureTime9 = 17
+function time9() {
+    
+    if (futureTime9 > hour) {
+        var userInput9 = $('#card9');
+        userInput9.addClass('future');
+    }
+            
+    else if (futureTime9 < hour) {
+        var userInput9 = $('#card9');
+        userInput9.addClass('past');
+    }
+            
+    else if (futureTime9 == hour) {
+        var userInput9 = $('#card9');
+        userInput9.addClass('present');
+    }
+            
+    }
+
+    time9()
